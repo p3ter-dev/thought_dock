@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought-Dock | Peter's Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">TD</span>
+                </div>
+                <h1 class="text-2xl font-bold gradient-text">Thought-Dock</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300">Home</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300">Articles</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300">Categories</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300">About</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-500 font-medium transition duration-300">Contact</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden text-gray-600" title="Open navigation menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <button class="hidden md:block bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-50 to-purple-50 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Welcome to <span class="gradient-text">Thought-Dock</span></h2>
+                <p class="text-lg text-gray-600 mb-6">Hi, I'm Peter. I write about technology, productivity, and personal growth. Join me on this journey of learning and sharing knowledge.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition duration-300">
+                        Read Latest Posts
+                    </button>
+                    <button class="border border-blue-500 text-blue-500 px-6 py-3 rounded-full font-medium hover:bg-blue-50 transition duration-300">
+                        About Me
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
+                    <div class="absolute inset-0 rounded-full border-8 border-white opacity-20"></div>
+                    <div class="absolute inset-4 rounded-full border-8 border-white opacity-20"></div>
+                    <div class="absolute inset-8 rounded-full border-8 border-white opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Peter" class="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Featured Articles</h2>
+                <a href="#" class="text-blue-500 font-medium hover:underline">View All Articles</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="article-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Article 1" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Technology</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>June 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">The Future of AI in Everyday Life</h3>
+                        <p class="text-gray-600 mb-4">Exploring how artificial intelligence is transforming our daily routines and what to expect in the coming years.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline flex items-center">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Article 2" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Productivity</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">10 Habits of Highly Productive People</h3>
+                        <p class="text-gray-600 mb-4">Learn the key habits that separate highly productive individuals from the rest and how to implement them in your life.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline flex items-center">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="article-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1399&q=80" alt="Article 3" class="w-full h-full object-cover transition duration-300 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Personal Growth</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>April 12, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>10 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">The Art of Mindful Living in a Digital Age</h3>
+                        <p class="text-gray-600 mb-4">Discover practical strategies to cultivate mindfulness and find balance in our increasingly connected world.</p>
+                        <a href="#" class="text-blue-500 font-medium hover:underline flex items-center">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Popular Categories</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Technology</h3>
+                    <p class="text-sm text-gray-500">12 Articles</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Productivity</h3>
+                    <p class="text-sm text-gray-500">8 Articles</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Mindfulness</h3>
+                    <p class="text-sm text-gray-500">5 Articles</p>
+                </a>
+                
+                <a href="#" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Book Reviews</h3>
+                    <p class="text-sm text-gray-500">7 Articles</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated with Thought-Dock</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Subscribe to my newsletter to receive the latest articles, insights, and resources directly in your inbox.</p>
+            
+            <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+            
+            <p class="text-sm mt-4 opacity-80">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">TD</span>
+                        </div>
+                        <h3 class="text-xl font-bold gradient-text">Thought-Dock</h3>
+                    </div>
+                    <p class="text-gray-400">A personal blog by Peter sharing thoughts on technology, productivity, and personal growth.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Articles</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Categories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Technology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Productivity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mindfulness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Book Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition duration-300" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-800 transition duration-300" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition duration-300" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition duration-300" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">peter@thoughtdock.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="footer">
+                    <p class="text-gray-400 text-sm">All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
